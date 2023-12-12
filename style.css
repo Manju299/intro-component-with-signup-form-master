@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Poppins:ital@0;1&display=swap');
+
+:root{
+
+     
+    --clr-primary-red: hsl(0, 100%, 74%);
+    --clr-green:hsl(154, 59%, 51%);
+    --clr-blue:hsl(248, 32%, 49%);
+    --clr-dark-blue:hsl(249, 10%, 26%);
+    --clr-grayish-blue: hsl(246, 25%, 77%);
+
+}
+
+body{
+    font-family: "Poppins";
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: var(--clr-primary-red);
+    color: white;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+/* .left-content{
+    display: grid;
+    grid-template-columns:1fr auto;
+    grid-column: unset;
+} */
+
+.create-form{
+    display: block;
+}
+
+.create-form > input{
+    display: flex;
+    
+    /* flex-direction: row; */
+}
+
+.sub{
+    background: var(--clr-green);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+
+}
+.price-tag{
+    background: var(--clr-dark-blue);
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 2px var(--clr-grayish-blue);
+    margin: 8px;
+
+}
+
+form{
+    display: block;
+    background-color: var(--clr-grayish-blue);
+    padding: 30px;
+    border-radius: 4px;
+    
+}
+
+input{
+    border-radius: 4px;
+    width: 100%;
+    /* border: none; */
+    
+}
+    
+@media screen and (max-width: 500px) {
+
+    .container {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
