@@ -22,7 +22,21 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr auto;
+    margin: auto auto;
+    
 }
+.left-content,.create-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+/* .create-form{
+    
+    justify-content: center;
+    
+} */
 
 /* .left-content{
     display: grid;
@@ -36,6 +50,7 @@ body{
 
 .create-form > input{
     display: flex;
+    justify-content: center;
     
     /* flex-direction: row; */
 }
@@ -49,9 +64,9 @@ body{
 
 }
 .price-tag{
-    background: var(--clr-dark-blue);
+    background: var(--clr-blue);
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 5px;
     box-shadow: 0px 2px var(--clr-grayish-blue);
     margin: 8px;
 
@@ -59,23 +74,63 @@ body{
 
 form{
     display: block;
-    background-color: var(--clr-grayish-blue);
+    background-color:  hsl(0 0% 100%);
     padding: 30px;
-    border-radius: 4px;
+    border-radius: 6px;
+    margin: 8px;
+    /* max-width: 300px; */
     
+}
+form > button{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 input{
     border-radius: 4px;
-    width: 100%;
-    /* border: none; */
+    width: 90%;
+    padding: 15px;
+    font-weight: 800;
+    border: 2px solid;
+    /* border-color: aqua; */
+    margin-bottom: 5px;
+    border-color: var(--clr-grayish-blue);
+    /* border-color: rgb(69, 211, 216); */
+    /* transition: 5s; */
+
     
 }
+
+.info-line{
+    color: var(--clr-grayish-blue);
+    font-size: 8px;
+}
+
+.terms{
+    color: var(--clr-primary-red);
+    font-weight: 600;
+}
+
+input:focus  {
+    border:2px solid green;
+}
+
+
     
 @media screen and (max-width: 500px) {
 
     .container {
       display: grid;
       grid-template-columns: auto;
+      /* width: 100%; */
+      margin: 0;
+    }
+    .left-content,.create-form  {
+        /* max-width: 300px; */
+        /* margin: 0 auto; */
+        padding:5px;
+        margin: 10px;
+
     }
   }
