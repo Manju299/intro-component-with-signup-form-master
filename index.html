@@ -12,6 +12,9 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Intro component with sign up form</title>
@@ -46,7 +49,8 @@
             id="fname"
             placeholder="FirstName"
             
-          /><br />
+          />
+          <br />
           <p class="nameErr" id="nameErrId" hidden>First name cannot be empty</p>
           <input
             type="text"
@@ -55,7 +59,8 @@
             placeholder="LastName"
             
           /><br />
-          <p class="nameErr" id="lnameErrId" hidden>First name cannot be empty</p>
+          
+          <p class="nameErr" id="lnameErrId" hidden>Last name cannot be empty</p>
           <input
             type="email"
             name="Email name"
@@ -63,7 +68,7 @@
             placeholder="Email"
             
           /><br />
-          <p class="nameErr" id="emailErrId" hidden>First name cannot be empty</p>
+          <p class="nameErr" id="emailErrId" hidden>Looks like this is not an email</p>
           <input
             type="password"
             name="First name"
@@ -71,7 +76,7 @@
             placeholder="Password"
             
           /><br />
-          <p class="nameErr" id="passErrId" hidden>First name cannot be empty</p>
+          <p class="nameErr" id="passErrId" hidden>Password cannot be empty</p>
 
           <button class="sub" id="btn1" type="submit">Claim your free trial</button><br />
           <span class="info-line"

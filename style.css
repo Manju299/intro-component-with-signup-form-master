@@ -21,8 +21,8 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr auto;
-    margin: auto auto;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
     
 }
 .left-content,.create-form{
@@ -30,6 +30,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 80px;
+    /* padding: 42px; */
 }
 
 /* .create-form{
@@ -58,16 +59,28 @@ body{
 .sub{
     background: var(--clr-green);
     padding: 1rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
+    border-radius: 6px;
     border: none;
     width: 100%;
+    cursor: pointer;
+    /* box-shadow: 10px #377446; */
+    /* box-shadow: -2px 17px 17px -5px rgba(54,181,101,1); */
+    box-shadow:inset 1px -8px 1px -5px rgba(54,181,101,1);    ;
+
+}
+
+.sub:hover{
+    background: #43c561;
+
 
 }
 .price-tag{
     background: var(--clr-blue);
     padding: 8px;
     border-radius: 5px;
-    box-shadow: 0px 2px var(--clr-grayish-blue);
+    box-shadow: inset  0px -8px 1px -3px rgb(208 101 101);
+    
     margin: 8px;
 
 }
@@ -79,6 +92,8 @@ form{
     border-radius: 6px;
     margin: 8px;
     /* max-width: 300px; */
+    box-shadow: inset 0px -8px 1px -3px rgb(208 101 101);
+    
     
 }
 form > button{
@@ -91,10 +106,10 @@ input{
     border-radius: 4px;
     width: 90%;
     padding: 15px;
-    font-weight: 800;
+    font-weight: 600;
     border: 2px solid;
     /* border-color: aqua; */
-    margin-bottom: 5px;
+    margin-bottom: 12px;
     border-color: var(--clr-grayish-blue);
     /* border-color: rgb(69, 211, 216); */
     /* transition: 5s; */
@@ -105,6 +120,7 @@ input{
 .info-line{
     color: var(--clr-grayish-blue);
     font-size: 8px;
+    text-align: center;
 }
 
 .terms{
@@ -121,11 +137,35 @@ input:focus  {
     color: rgb(249, 35, 35);
     text-align: end;
     font-size: 10px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    font-style: italic;
 
 }
+/* 
+.icon{
+  position: absolute;
+  top: 50%;
+  right: 8px; Adjust the right distance as needed */
+  /* transform: translateY(-50%);
+  color: red;  */
+  /* display: none; */
+/* }  */
 
+/* form {
+    position: relative;
+  } */
+  
+  /* .fname {
+    border: 1px solid red; /* You can customize the border style for the error state */
+    /* padding-right: 30px; Adjust the padding to leave space for the error icon */
+  /* } */ 
+
+/* .fname:focus + .icon {
+    display: block;
+  /* } */
     
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .container {
       display: grid;
@@ -137,7 +177,7 @@ input:focus  {
         /* max-width: 300px; */
         /* margin: 0 auto; */
         padding:5px;
-        margin: 10px;
+        margin: 10px; 
 
     }
   }
