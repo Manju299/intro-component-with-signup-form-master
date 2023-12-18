@@ -23,6 +23,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
+    max-width: 1120px;
     
 }
 .left-content,.create-form{
@@ -86,6 +87,7 @@ body{
 }
 
 form{
+    /* position: relative; */
     display: block;
     background-color:  hsl(0 0% 100%);
     padding: 30px;
@@ -142,28 +144,18 @@ input:focus  {
     font-style: italic;
 
 }
-/* 
-.icon{
-  position: absolute;
-  top: 50%;
-  right: 8px; Adjust the right distance as needed */
-  /* transform: translateY(-50%);
-  color: red;  */
-  /* display: none; */
-/* }  */
+ 
+.er_ricon{
+    position: absolute;
+    display: flex;
+    top: 11px;
+    right: 10px;
 
-/* form {
+}
+
+.formclass{
     position: relative;
-  } */
-  
-  /* .fname {
-    border: 1px solid red; /* You can customize the border style for the error state */
-    /* padding-right: 30px; Adjust the padding to leave space for the error icon */
-  /* } */ 
-
-/* .fname:focus + .icon {
-    display: block;
-  /* } */
+}
     
 @media screen and (max-width: 600px) {
 
@@ -172,12 +164,14 @@ input:focus  {
       grid-template-columns: auto;
       /* width: 100%; */
       margin: 0;
+      text-align: center;
     }
     .left-content,.create-form  {
         /* max-width: 300px; */
         /* margin: 0 auto; */
         padding:5px;
         margin: 10px; 
+
 
     }
   }

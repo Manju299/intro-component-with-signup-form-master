@@ -42,41 +42,58 @@
 
       <div class="create-form">
         <div class="price-tag">Try it free 7 days then $20/mo. thereafter</div>
+
         <form>
+          <div class="formclass">
+          <img src="./images/icon-error.svg" alt="err" class="er_ricon">
           <input
             type="text"
             name="First name"
             id="fname"
             placeholder="FirstName"
-            
           />
           <br />
           <p class="nameErr" id="nameErrId" hidden>First name cannot be empty</p>
+        </div>
+
+
+        <div class="formclass">
+          <img src="./images/icon-error.svg" alt="err" class="er_ricon">
           <input
             type="text"
             name="Last name"
             id="lname"
             placeholder="LastName"
-            
           /><br />
-          
           <p class="nameErr" id="lnameErrId" hidden>Last name cannot be empty</p>
+        </div>
+
+
+          <div class="formclass">
+            <img src="./images/icon-error.svg" alt="err" class="er_ricon">
           <input
             type="email"
             name="Email name"
             id="email"
             placeholder="Email"
-            
+            autocomplete="email"
+            required
           /><br />
           <p class="nameErr" id="emailErrId" hidden>Looks like this is not an email</p>
+
+
+          <div class="formclass">
+            <img src="./images/icon-error.svg" alt="err" class="er_ricon">
           <input
             type="password"
-            name="First name"
+            name="pass"
             id="pass"
             placeholder="Password"
-            
+            autocomplete="new-password"
+            required
           /><br />
           <p class="nameErr" id="passErrId" hidden>Password cannot be empty</p>
+        </div>
 
           <button class="sub" id="btn1" type="submit">Claim your free trial</button><br />
           <span class="info-line"

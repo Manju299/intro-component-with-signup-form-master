@@ -14,7 +14,7 @@ function validate(e){
     const email = document.getElementById("email");
     const password = document.getElementById("pass");
     // const errorIcon = firstName.nextElementSibling;
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var mailformat = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
     // let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
@@ -35,17 +35,19 @@ function validate(e){
         lastName.style.borderColor="red";
     
     }
-    if( ! mailformat.test(email)){
+    if(email.checkValidity()){
         const err2 = document.getElementById("emailErrId");
         err2.removeAttribute('hidden');
         email.style.borderColor="red";  
         // email.style.value.color="red";   
     
     }
-    else if(email.value === ""){
+    if(email.value === ""){
         const err2 = document.getElementById("emailErrId");
         err2.removeAttribute('hidden');
-        email.style.borderColor="red";  
+        email.style.borderColor="red";
+
+        
 
     }
     if(password.value === "" ){
