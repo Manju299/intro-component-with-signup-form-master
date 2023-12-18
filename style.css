@@ -60,15 +60,15 @@ body{
 .sub{
     background: var(--clr-green);
     padding: 1rem;
-    /* border-radius: 1rem; */
     border-radius: 6px;
     border: none;
     width: 100%;
     cursor: pointer;
-    /* box-shadow: 10px #377446; */
-    /* box-shadow: -2px 17px 17px -5px rgba(54,181,101,1); */
-    box-shadow:inset 1px -8px 1px -5px rgba(54,181,101,1);    ;
-
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    box-shadow:inset 1px -8px 1px -5px rgba(54,181,101,1);
 }
 
 .sub:hover{
@@ -78,11 +78,12 @@ body{
 }
 .price-tag{
     background: var(--clr-blue);
-    padding: 8px;
+    padding: 15px;
     border-radius: 5px;
     box-shadow: inset  0px -8px 1px -3px rgb(208 101 101);
-    
+    text-align: center;
     margin: 8px;
+    font-size: 14px;
 
 }
 
@@ -150,11 +151,22 @@ input:focus  {
     display: flex;
     top: 11px;
     right: 10px;
+    display: none;
 
 }
 
 .formclass{
     position: relative;
+}
+
+.attribution{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.try{
+    font-weight: 700;
 }
     
 @media screen and (max-width: 600px) {
